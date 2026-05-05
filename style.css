@@ -678,15 +678,27 @@ body {
 @media (max-width: 480px) {
     .navbar .container {
         padding: 0.5rem 20px;
+        align-items: flex-start;
     }
 
     .nav-brand {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        flex-shrink: 0;
     }
 
     .nav-menu {
-        gap: 0.5rem;
-        font-size: 0.85rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+        flex: 1;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .nav-menu li {
+        list-style: none;
     }
 
     .profile-picture img {
