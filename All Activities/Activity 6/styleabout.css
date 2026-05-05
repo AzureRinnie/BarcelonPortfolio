@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 40px;
+    border-top: 8px solid #FF6600; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.story {
+    flex: 2;
+    min-width: 300px;
+}
+
+.story h2 {
+    color: #FF6600;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.story p {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.prof {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    background: #1a1a1a; 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prof img {
+    max-width: 100%;   
+    height: auto;      
+    border-radius: 8px; 
+    border: 3px solid #FF6600;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prof p {
+    margin: 5px 0;
+}
+
+.maps-inquiry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.map, .inquiry {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.map h2, .inquiry h2 {
+    color: #000;
+    border-bottom: 3px solid #FF6600;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form button {
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background-color: #000;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 5px;
+}
