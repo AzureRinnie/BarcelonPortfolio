@@ -16,10 +16,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #e0e7ff;
-    background-color: #050717;
-    background-image: radial-gradient(circle at 20% 10%, rgba(147, 197, 253, 0.15), transparent 18%),
-                      radial-gradient(circle at 80% 15%, rgba(168, 85, 247, 0.12), transparent 16%),
-                      linear-gradient(135deg, #050717 0%, #121d4c 35%, #2e1f67 70%, #0b0e28 100%);
+    background: linear-gradient(135deg, #050717 0%, #121d4c 35%, #2e1f67 70%, #0b0e28 100%);
     background-attachment: fixed;
     min-height: 100vh;
 }
