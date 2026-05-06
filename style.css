@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    GENERAL STYLES
    ============================================ */
 
@@ -16,7 +16,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #e0e7ff;
-    background: linear-gradient(135deg, #020617 0%, #1e1b4b 100%);
+    background-color: #050717;
+    background-image: radial-gradient(circle at 20% 10%, rgba(147, 197, 253, 0.15), transparent 18%),
+                      radial-gradient(circle at 80% 15%, rgba(168, 85, 247, 0.12), transparent 16%),
+                      linear-gradient(135deg, #050717 0%, #121d4c 35%, #2e1f67 70%, #0b0e28 100%);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -32,93 +35,95 @@ body {
    ============================================ */
 
 .navbar {
-    background-color: rgba(2, 6, 23, 0.8);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
+        background-color: rgba(10, 12, 35, 0.9);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+        border-bottom: 1px solid rgba(147, 197, 253, 0.12);
+    }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 20px;
-}
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 20px;
+    }
 
-.nav-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #D4AF37;
-}
+    .nav-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #a78bfa;
+    }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
 
-.nav-link {
-    text-decoration: none;
-    color: #e0e7ff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
+    .nav-link {
+        text-decoration: none;
+        color: #e0e7ff;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
 
-.nav-link:hover {
-    color: #D4AF37;
-}
+    .nav-link:hover {
+        color: #a78bfa;
+    }
 
-.nav-link:hover::after {
-    width: 100%;
-}
+    .nav-link:hover::after {
+        width: 100%;
+    }
 
-/* ============================================
-   BUTTONS
-   ============================================ */
+    /* ============================================
+       BUTTONS
+       ============================================ */
 
-.btn {
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-}
+    .btn {
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1rem;
+    }
 
-.btn-primary {
-    background-color: rgba(212, 175, 55, 0.3);
-    color: #D4AF37;
-    border: 2px solid rgba(212, 175, 55, 0.6);
-}
+    .btn-primary {
+        background-color: rgba(124, 58, 237, 0.2);
+        color: #eef2ff;
+        border: 2px solid rgba(124, 58, 237, 0.6);
+    }
 
-.btn-primary:hover {
-    background-color: rgba(212, 175, 55, 0.5);
-    border-color: #D4AF37;
-}
+    .btn-primary:hover {
+        background-color: rgba(124, 58, 237, 0.35);
+        border-color: #c4b5fd;
+    }
 
-.btn-secondary {
-    background-color: rgba(224, 231, 255, 0.1);
-    color: #e0e7ff;
-    border: 2px solid rgba(212, 175, 55, 0.5);
-}
+    .btn-secondary {
+        background-color: rgba(224, 231, 255, 0.08);
+        color: #e0e7ff;
+        border: 2px solid rgba(168, 85, 247, 0.5);
+    }
 
-.btn-secondary:hover {
-    background-color: rgba(212, 175, 55, 0.2);
-    color: #D4AF37;
-    border-color: #D4AF37;
-}
+    .btn-secondary:hover {
+        background-color: rgba(124, 58, 237, 0.18);
+        color: #e0e7ff;
+        border-color: rgba(124, 58, 237, 0.6);
+    }
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
+    /* ============================================
+       HERO SECTION
+       ============================================ */
 
-.hero {
-    background: linear-gradient(135deg, rgba(30, 27, 75, 0.8) 0%, rgba(100, 181, 246, 0.1) 100%);
-    color: #e0e7ff;
+    .hero {
+        background: radial-gradient(circle at 20% 20%, rgba(147, 197, 253, 0.14), transparent 18%),
+                    radial-gradient(circle at 80% 10%, rgba(167, 139, 250, 0.16), transparent 16%),
+                    linear-gradient(135deg, rgba(16, 19, 58, 0.95) 0%, rgba(42, 24, 98, 0.85) 100%);
     padding: 100px 20px;
     text-align: center;
     min-height: 600px;
@@ -153,7 +158,7 @@ body {
 }
 
 .highlight {
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .hero .subtitle {
@@ -208,7 +213,7 @@ body {
     color: #e0e7ff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid #D4AF37;
+    border-top: 4px solid #a78bfa;
 }
 
 .home-card:hover {
@@ -248,7 +253,7 @@ body {
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .about-me-section p {
@@ -267,7 +272,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 30px;
     text-align: center;
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .education-item {
@@ -276,7 +281,7 @@ body {
     border-radius: 10px;
     max-width: 700px;
     margin: 0 auto 30px auto;
-    border-left: 5px solid #D4AF37;
+    border-left: 5px solid #a78bfa;
 }
 
 .education-item h4 {
@@ -287,7 +292,7 @@ body {
 
 .education-item .school {
     font-weight: 600;
-    color: #D4AF37;
+    color: #a78bfa;
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
@@ -306,7 +311,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 30px;
     text-align: center;
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .involvement-group {
@@ -314,12 +319,12 @@ body {
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border-left: 5px solid #D4AF37;
+    border-left: 5px solid #a78bfa;
 }
 
 .involvement-group h4 {
     font-size: 1.2rem;
-    color: #D4AF37;
+    color: #a78bfa;
     margin-bottom: 15px;
 }
 
@@ -347,7 +352,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 50px;
     text-align: center;
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .skills-grid {
@@ -361,13 +366,13 @@ body {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    border-left: 5px solid #D4AF37;
+    border-left: 5px solid #a78bfa;
 }
 
 .skill-category h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .skill-category {
@@ -408,7 +413,7 @@ body {
 
 .progress {
     height: 100%;
-    background: linear-gradient(90deg, #D4AF37, #64B5F6);
+    background: linear-gradient(90deg, #a78bfa, #64B5F6);
     border-radius: 4px;
     transition: width 0.3s ease;
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
@@ -456,7 +461,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    color: #D4AF37;
+    color: #a78bfa;
 }
 
 .activities-grid {
@@ -470,7 +475,7 @@ body {
     border-radius: 10px;
     padding: 24px;
     text-align: center;
-    border-left: 5px solid #D4AF37;
+    border-left: 5px solid #a78bfa;
 }
 
 .activity-card span {
@@ -478,7 +483,7 @@ body {
     padding: 12px 18px;
     border-radius: 5px;
     background: rgba(212, 175, 55, 0.2);
-    color: #D4AF37;
+    color: #a78bfa;
     text-decoration: none;
     font-weight: 600;
 }
@@ -496,7 +501,7 @@ body {
 .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: #D4AF37;
+    color: #a78bfa;
     text-align: center;
 }
 
@@ -557,7 +562,7 @@ body {
     place-items: center;
     border-radius: 14px;
     background: rgba(212, 175, 55, 0.12);
-    color: #D4AF37;
+    color: #a78bfa;
     font-size: 1.1rem;
     margin-top: 2px;
 }
