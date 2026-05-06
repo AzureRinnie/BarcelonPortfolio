@@ -154,7 +154,7 @@ body {
     color: #cbd5e1;
 }
 
-.cta {
+.cta-buttons {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -221,21 +221,36 @@ body {
     color: #e0e7ff;
 }
 
-.about-me {
-    margin-bottom: 80px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
 }
 
-.about-me h3 {
+.about-me-section,
+.education-section,
+.involvements-section {
+    background-color: rgba(16, 19, 58, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(167, 139, 250, 0.15);
+}
+
+.about-me-section {
+    max-width: 100%;
+}
+
+.about-me-section h3,
+.education-section h3,
+.involvements-section h3 {
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
     color: #a78bfa;
 }
 
-.about-me p {
+.about-me-section p {
     font-size: 1rem;
     color: #cbd5e1;
     line-height: 1.8;
@@ -243,23 +258,15 @@ body {
     text-align: justify;
 }
 
-.education {
-    margin-bottom: 60px;
-}
-
-.education h3 {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #a78bfa;
+.education-section {
+    display: grid;
+    gap: 20px;
 }
 
 .education-item {
     background-color: rgba(30, 27, 75, 0.4);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
+    padding: 25px;
+    border-radius: 16px;
     border-left: 5px solid #a78bfa;
 }
 
@@ -272,7 +279,7 @@ body {
 .education-item .school {
     font-weight: 600;
     color: #a78bfa;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 5px;
 }
 
@@ -282,21 +289,14 @@ body {
     margin-bottom: 15px;
 }
 
-.involvements {
-    margin-bottom: 40px;
-}
-
-.involvements h3 {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #a78bfa;
+.involvements-section {
+    grid-column: 1 / -1;
 }
 
 .involvement-group {
     background-color: rgba(30, 27, 75, 0.4);
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 16px;
     margin-bottom: 20px;
     border-left: 5px solid #a78bfa;
 }
@@ -310,14 +310,29 @@ body {
 .involvement-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .involvement-list li {
-    padding: 8px 0;
+    padding: 10px 0;
     color: #cbd5e1;
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.7;
     border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+.involvement-list li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 900px) {
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .involvements-section {
+        grid-column: auto;
+    }
 }
 
 .skills {
@@ -585,6 +600,28 @@ body {
     color: #cbd5e1;
 }
 
+.footer {
+    background-color: rgba(2, 6, 23, 0.9);
+    color: #e0e7ff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         gap: 1rem;
@@ -684,3 +721,4 @@ body {
         font-size: 1.5rem;
     }
 }
+
