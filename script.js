@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Observe all cards and content
     const activityCards = document.querySelectorAll('.activity-card');
     const skillCategories = document.querySelectorAll('.skill-category');
     const educationItem = document.querySelector('.education-item');
